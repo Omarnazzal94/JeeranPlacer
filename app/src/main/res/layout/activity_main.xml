@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.example.omar.newjeeranplace.MainActivity">
+    <include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Btnback"
+        android:layout_weight="1"
+        android:text="Back"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Edittxt"
+        android:layout_weight="1"
+        android:hint="Enter Place Name"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Btnnxt"
+        android:layout_weight="1"
+        android:text="Next"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:id="@+id/img1"/>
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:id="@+id/img2"/>
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:id="@+id/img3"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnID"
+            android:layout_weight="1"
+            android:text="view all"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="50dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/upload"
+            android:layout_weight="1"
+            android:text="Upload"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Takepic"
+            android:layout_weight="1"
+            android:text="Take Photo"/>
+
+    </LinearLayout>
+</LinearLayout>
